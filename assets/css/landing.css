@@ -86,7 +86,7 @@ button {
 #principal nav a::before {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: -2px;
   left: 0px;
   height: 1px;
   width: 0%;
@@ -185,7 +185,7 @@ button#btn-nav:hover {
   text-align: center;
   background-color: transparent;
   border-radius: 20px;
-  box-shadow: 1px 2px 10px 1px #000000;
+  
 }
 #titulo-form {
   background-color: #252422;
@@ -218,6 +218,11 @@ button#btn-nav:hover {
   /* background: url("../img/usuario.png");
   background-repeat: no-repeat;
   background-position: left; */
+}
+#formulario input[type="text"]
+{
+  color: black;
+  font-weight: 500;
 }
 #formulario input:focus {
   width: 225px;
@@ -349,6 +354,7 @@ footer#rodape {
     flex-direction: row;
     justify-content: center;
     padding: 0;
+    display: inline;
   }
   #centralizar-navbar {
     width: 100%;
@@ -365,11 +371,9 @@ footer#rodape {
     text-transform: uppercase;
     transition: 0.8s;
     position: relative;
-    display: inline;
+    
   }
-  #principal nav a:focus {
-    letter-spacing: 5px;
-  }
+
   #principal nav a:focus::before {
     width: 100%;
   }
